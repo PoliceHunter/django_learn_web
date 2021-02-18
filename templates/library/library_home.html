@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Library page
+{% endblock %}
+
+{% block content %}
+
+    <div class="features">
+        <h1>Library Page</h1>
+        <p>Welcome to <em>Local Library</em> catalog, basic Django website</p>
+        <h2>Dynamic Content</h2>
+        <p>The library has the following record counts:</p>
+        <ul>
+            <li><strong>Books: </strong> {{ num_books }}</li>
+            <li><strong>Copies:</strong> {{ num_instances }}</li>
+            <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+            <li><strong>Authors:</strong> {{ num_authors }}</li>
+        </ul>
+
+        <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+
+        <a href="{% url 'home'%}" class="btn btn-info">Home button</a>
+        <a href="{% url 'books'%}" class="btn btn-info">See books</a>
+
+    </div>
+{% endblock %}

@@ -17,12 +17,16 @@ aside img {
     float: left;
 }
 
-aside .logo {
-    font-size: 40px;
+aside logo {
+    font-size: 30px;
     margin-left: 10px;
     font-weight: bold;
     position: relative;
     top: -5px;
+}
+
+aside li{
+   color: #2CBCCD;
 }
 
 aside h3{
@@ -60,6 +64,14 @@ main .features p {
     max-width: 400px;
     margin: 20px auto;
 }
+
+
+main .pagination {
+    float: left;
+    max-width: 400px;
+    color: #fff;
+}
+
 
 .alert-warning {
     float: left;

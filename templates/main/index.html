@@ -9,6 +9,8 @@
         <h1>Home Page</h1>
         <h>{{ key }}</h>
         <p>Abcdefghijklmnopqrstuvwxyz</p>
-        <button class="btn btn-warning">About button</button>
+        <a href="{% url 'about'%}" class="btn btn-info">About button</a>
+        <a href="{% url 'library_home'%}" class="btn btn-info">Library button</a>
+        <a href="{% url 'news_home'%}" class="btn btn-info">News button</a>
     </div>
 {% endblock %}

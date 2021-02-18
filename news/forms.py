@@ -1,7 +1,6 @@
 from .models import Articles
 from django.forms import ModelForm, TextInput, DateTimeInput, Textarea
 
-
 class ArticlesForm(ModelForm):
     class Meta:
         model = Articles
@@ -10,7 +9,8 @@ class ArticlesForm(ModelForm):
         widgets = {
             "title": TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Name news'
+                'placeholder': 'Name'
+
             }),
             "anons": TextInput(attrs={
                 'class': 'form-control',
@@ -18,7 +18,7 @@ class ArticlesForm(ModelForm):
             }),
             "date": DateTimeInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Date'
+                'placeholder': 'yyyy-mm-dd hh:mm:ss'
             }),
             "full_text": Textarea(attrs={
                 'class': 'form-control',
