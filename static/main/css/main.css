@@ -11,13 +11,16 @@ aside {
     color: #fff;
     border-right: 5px solid #4d4d4d;
 }
+main {
+    margin-left: 20%;
+}
 
 aside img {
     width: 100px;
     float: left;
 }
 
-aside logo {
+aside .logo {
     font-size: 30px;
     margin-left: 10px;
     font-weight: bold;
@@ -85,4 +88,11 @@ form {
     margin-left: 32%;
     width: 500px;
     margin-top: 50px;
+}
+
+main ul li {
+    display: block;
+    font-size: 20px;
+    width: 75%;
+    color: #fbfbfc;
 }
